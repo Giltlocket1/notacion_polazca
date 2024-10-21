@@ -1,0 +1,21 @@
+  /* Estilos personalizados para la card oscura */
+  .card-dark {
+    background-color: #343a40;
+    color: white;
+    border: 2px solid;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 2s;
+}
+
+/* Animación de bordes RGB en movimiento */
+@keyframes borderRGB {
+    0% { border-color: rgb(255, 0, 0); }
+    33% { border-color: rgb(0, 255, 0); }
+    66% { border-color: rgb(0, 0, 255); }
+    100% { border-color: rgb(255, 0, 0); }
+}
+
+.card-dark {
+    animation: borderRGB 4s infinite;
+}
